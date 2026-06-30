@@ -993,8 +993,8 @@
               <div class="tn-atom">
                 <img
                   class="tn-atom__img t-img"
-                  data-original="https://static.tildacdn.net/tild6164-3830-4431-b133-666364353937/Untitled_Project_7.png"
-                  src="https://thb.tildacdn.net/tild6164-3830-4431-b133-666364353937/-/resize/20x/Untitled_Project_7.png"
+                  data-original="assets/Untitled_Project_7.png.webp"
+                  src="assets/Untitled_Project_7.png.webp"
                   alt=""
                   imgfield="tn_img_1773847037346"
                 />
@@ -1032,6 +1032,9 @@
             </div>
           </div>
         </div>
+
+
+
         <script>
           t_onReady(function () {
             t_onFuncLoad("t396_init", function () {
@@ -1040,6 +1043,8 @@
           });
         </script>
         <!-- /T396 -->
+
+        
       </div>
       <div
         id="rec2053155743"
@@ -1175,6 +1180,8 @@
       >
         <!-- T396 -->
         <style>
+
+          
           #rec2047601243 .t396__artboard {
             height: 782px;
             background-color: #fffdfb;
@@ -1222,6 +1229,8 @@
               background-attachment: scroll;
             }
           }
+
+
           @media screen and (max-width: 479px) {
             #rec2047601243 .t396__artboard,
             #rec2047601243 .t396__filter,
@@ -1631,6 +1640,8 @@
               left: calc(50% - 160px + -60px);
             }
           }
+
+          
         </style>
         <div class="t396">
           <div
@@ -1789,7 +1800,7 @@
               data-field-left-res-960-value="326"
             >
               <div class="tn-atom" field="tn_text_1730310670432">
-                are getting married!
+               are getting engaged!
               </div>
             </div>
             <div
@@ -2322,29 +2333,29 @@
                       }
                       .tdr-label {
                         font-family: "Rufina", serif;
-                        font-size: clamp(9px, 2vw, 11px);
+                        font-size: clamp(15px, 2vw, 11px);
                         letter-spacing: 4px;
                         color: #003662;
                         text-transform: uppercase;
                         text-align: center;
                       }
                       .tdr-married {
-                        font-family: "Imperial Script", cursive;
-                        font-size: clamp(30px, 7vw, 34px);
-                        color: #3a3a3a;
-                        font-weight: 400;
-                        text-align: center;
-                        letter-spacing: -0.5px;
-                        line-height: 1.15;
-                        min-height: 1.3em;
-                        opacity: 0;
-                        transform: translateY(10px);
-                        transition: all 1.1s cubic-bezier(0.16, 1, 0.3, 1);
-                        background: transparent;
+                         font-family: "Imperial Script", cursive;
+    font-size: clamp(30px, 7vw, 34px);
+    color: #3a3a3a;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -0.5px;
+    line-height: 1.15;
+    min-height: 1.3em;
+   opacity: 1;
+margin-top: 10px;
+    background: transparent;
                       }
                       @media (max-width: 480px) {
                         .tdr-married {
-                          font-size: 36px;
+                          font-size: 27px;
+                          padding-top:30px;
                         }
                       }
                       .tdr-married.tdr-show {
@@ -2735,7 +2746,43 @@
                         });
                       })();
                     </script>
+
+
+<a href="#rec2047601243" class="scroll-down">
+    <div class="scroll-circle">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="scroll-text">SCROLL DOWN</div>
+</a>
+<script>
+const scrollDown = document.querySelector(".scroll-down");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+        scrollDown.style.opacity = "0";
+        scrollDown.style.visibility = "hidden";
+        scrollDown.style.pointerEvents = "none";
+    } else {
+        scrollDown.style.opacity = "1";
+        scrollDown.style.visibility = "visible";
+        scrollDown.style.pointerEvents = "auto";
+    }
+});
+
+scrollDown.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    document.querySelector("#rec2047601243").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+</script>
+
+
                   </body>
+
+                  
                 </html>
               </div>
             </div>
@@ -3261,7 +3308,7 @@
           #rec2191269323 .tn-elem[data-elem-id="1705235414678"] .tn-atom {
             vertical-align: middle;
             color: #3a3a3a;
-            font-size: 18px;
+            font-size: 20px;
             font-family: var(--t-text-font, Arial);
             line-height: 1.25;
             font-weight: 400;
@@ -3433,7 +3480,10 @@
               color var(--t396-speedhover, 0s) ease-in-out,
               border-color var(--t396-speedhover, 0s) ease-in-out,
               box-shadow var(--t396-shadowshoverspeed, 0.2s) ease-in-out;
+              
           }
+
+          
           #rec2191269323 .tn-elem[data-elem-id="1776870726590"] .tn-atom__img {
             border-radius: 0px 0px 0px 0px;
             object-position: center center;
@@ -3470,6 +3520,92 @@
               height: auto;
             }
           }
+
+         .scroll-down{
+    position:fixed;
+    left:50%;
+    bottom:45px;
+    transform:translateX(-50%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-decoration:none;
+    z-index:99999;
+    transition:.3s;
+}
+
+.scroll-circle{
+    width:38px;
+    height:38px;
+    border:2px solid rgba(16, 16, 16, 0.75);
+    border-radius:50%;
+    position:relative;
+}
+
+.scroll-circle span{
+    position:absolute;
+    left:50%;
+    width:5px;
+    height:5px;
+    border-right:2px solid #1c1c1c;
+    border-bottom:2px solid  #1c1c1c;
+    transform:translateX(-50%) rotate(45deg);
+}
+
+.scroll-circle span:first-child{
+    top:10px;
+    animation:arrow1 1.8s infinite;
+}
+
+.scroll-circle span:last-child{
+    top:15px;
+    animation:arrow2 1.8s infinite;
+}
+
+.scroll-text{
+    margin-top:14px;
+    font-size:11px;
+    letter-spacing:4px;
+    color:#1c1c1c;
+    font-family:Arial, sans-serif;
+}
+
+@keyframes arrow1{
+    0%{
+        opacity:0;
+        transform:translate(-50%,-4px) rotate(45deg);
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+        transform:translate(-50%,6px) rotate(45deg);
+    }
+}
+
+@keyframes arrow2{
+    0%{
+        opacity:0;
+        transform:translate(-50%,0) rotate(45deg);
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+        transform:translate(-50%,10px) rotate(45deg);
+    }
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+.scroll-down{
+    transition: opacity .4s ease, visibility .4s ease;
+}
         </style>
         <div class="t396">
           <div
@@ -3791,7 +3927,7 @@
               data-field-heightunits-res-960-value="px"
               data-field-textfit-res-960-value="autoheight"
             >
-              <div class="tn-atom" field="tn_text_1705235414678">
+              <div class="tn-atom" field="tn_text_1705235414678" style="font-size:medium;">
                 As we get ready to say “I do,” we feel grateful for the
                 wonderful people in our lives.<br /><br />Your support means the
                 world to us, and we would be honored to have you with us as we
@@ -5881,7 +6017,7 @@
                   data-field-left-res-960-value="512"
                 >
                   <div class="tn-atom" field="tn_text_1763405268776">
-                    Opening of the doors
+               Join us at
                   </div>
                 </div>
                 <div
@@ -5910,7 +6046,7 @@
                   data-field-top-res-960-value="106"
                   data-field-left-res-960-value="537"
                 >
-                  <div class="tn-atom" field="tn_text_1772803062504">16:30</div>
+                  <div class="tn-atom" field="tn_text_1772803062504">6:00PM</div>
                 </div>
               </div>
             </div>
@@ -5995,7 +6131,7 @@
                   data-field-textfit-res-960-value="autoheight"
                 >
                   <div class="tn-atom" field="tn_text_1772803288793000003">
-                    17:00
+                    8:00PM
                   </div>
                 </div>
               </div>
@@ -6071,7 +6207,7 @@
                   data-field-left-res-960-value="537"
                 >
                   <div class="tn-atom" field="tn_text_1772803465944000006">
-                    18:00
+                    10:00PM
                   </div>
                 </div>
               </div>
@@ -6270,9 +6406,7 @@
                   data-field-top-res-960-value="536"
                   data-field-left-res-960-value="304"
                 >
-                  <div class="tn-atom" field="tn_text_1776878815963000012">
-                    End of the celebration
-                  </div>
+                  
                 </div>
                 <div
                   class="t396__elem tn-elem tn-elem__21918666331776878815963000013"
@@ -6300,9 +6434,7 @@
                   data-field-top-res-960-value="490"
                   data-field-left-res-960-value="346"
                 >
-                  <div class="tn-atom" field="tn_text_1776878815963000013">
-                    23:00
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -7210,8 +7342,7 @@
               data-field-left-res-960-value="325"
             >
               <div class="tn-atom" field="tn_text_1776866271348000001">
-                Wedding venue
-              </div>
+Engagement venue              </div>
             </div>
             <div
               class="t396__elem tn-elem tn-elem__20476572031776866271348000002 t-animate"
@@ -7269,7 +7400,7 @@
               data-field-left-res-960-value="349"
             >
               <div class="tn-atom" field="tn_text_1776866271348000003">
-                Villa Borghese
+                City Park 
               </div>
             </div>
             <div
@@ -7298,7 +7429,7 @@
               data-field-left-res-960-value="349"
             >
               <div class="tn-atom" field="tn_text_1776866271348000004">
-                Address: Puerto Vallarta, MX
+                Address: City Park, Block KP, Poorvi Pitampura, Pitampura, Delhi, 110034
               </div>
             </div>
           </div>
@@ -7312,13 +7443,13 @@
         </script>
         <!-- /T396 -->
       </div>
-      <div
+      <!-- <div
         id="rec2190869763"
         class="r t-rec"
         style=""
         data-animationappear="off"
         data-record-type="396"
-      >
+      >-->
         <!-- T396 -->
         <style>
           #rec2190869763 .t396__artboard {
@@ -7596,7 +7727,7 @@
           }
         </style>
         <div class="t396">
-          <div
+          <!-- <div
             class="t396__artboard"
             data-artboard-recid="2190869763"
             data-artboard-screens="320,480,640,960,1200"
@@ -7605,7 +7736,7 @@
             data-artboard-upscale="grid"
           >
             <div class="t396__carrier" data-artboard-recid="2190869763"></div>
-            <div class="t396__filter" data-artboard-recid="2190869763"></div>
+            <div class="t396__filter" data-artboard-recid="2190869763"></div> -->
             <div
               class="t396__elem tn-elem tn-elem__21908697631741427070967"
               data-elem-id="1741427070967"
@@ -7628,11 +7759,11 @@
               data-field-left-res-640-value="161"
               data-field-left-res-960-value="321"
             >
-              <div class="tn-atom" field="tn_text_1741427070967">
+             <!--  <div class="tn-atom" field="tn_text_1741427070967">
                 Dress code
               </div>
-            </div>
-            <div
+            </div>-->
+           <!-- <div
               class="t396__elem tn-elem tn-elem__21908697631741427070972"
               data-elem-id="1741427070972"
               data-elem-type="text"
@@ -7658,7 +7789,7 @@
                 We would be very happy if your outfit is in the colours of the
                 wedding theme.
               </div>
-            </div>
+            </div>-->
             <div
               class="t396__elem tn-elem tn-elem__21908697631741431382522"
               data-elem-id="1741431382522"
@@ -7713,7 +7844,7 @@
         </script>
         <!-- /T396 -->
       </div>
-      <div
+    <!---->  <div
         id="rec2190869843"
         class="r t-rec t-rec_pt_0 t-rec_pb_15"
         style="
@@ -7726,251 +7857,7 @@
         data-bg-color="#fffdfb"
       >
         <!-- T1148 -->
-        <div class="t1148">
-          <div class="t1148__container_flex t-container t-container_flex">
-            <div class="t-col t-col_12 t1148__col"></div>
-          </div>
-          <div class="t1148__gallery">
-            <div
-              class="t1148__slider t1148__slider_width_12 t-animate"
-              id="carousel_2190869843"
-              aria-live="polite"
-              style="gap: 20px"
-              data-animate-style="fadein"
-            >
-              <div
-                class="t1148__item"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="1 of 10"
-                aria-current="true"
-              >
-                <div
-                  class="t1148__img-wrapper"
-                  style="--height: 500px; --mob-height: 350px"
-                >
-                  <img
-                    class="t-img t1148__img"
-                    src="https://thb.tildacdn.net/tild3636-6361-4930-b032-303334643635/-/empty/fe849b681b9cfddb0d3b.png"
-                    data-original="https://static.tildacdn.net/tild3636-6361-4930-b032-303334643635/fe849b681b9cfddb0d3b.png"
-                    data-index="0"
-                    data-original="https://static.tildacdn.net/tild3636-6361-4930-b032-303334643635/fe849b681b9cfddb0d3b.png"
-                    imgfield="gi_img__0"
-                    alt=""
-                    draggable="false"
-                  />
-                </div>
-              </div>
-              <div
-                class="t1148__item"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="2 of 10"
-                aria-current="false"
-              >
-                <div
-                  class="t1148__img-wrapper"
-                  style="--height: 500px; --mob-height: 350px"
-                >
-                  <img
-                    class="t-img t1148__img"
-                    src="https://thb.tildacdn.net/tild6534-6461-4737-a535-383131303433/-/empty/929df5d91510928224dc.png"
-                    data-original="https://static.tildacdn.net/tild6534-6461-4737-a535-383131303433/929df5d91510928224dc.png"
-                    data-index="1"
-                    data-original="https://static.tildacdn.net/tild6534-6461-4737-a535-383131303433/929df5d91510928224dc.png"
-                    imgfield="gi_img__1"
-                    alt=""
-                    draggable="false"
-                  />
-                </div>
-              </div>
-              <div
-                class="t1148__item"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="3 of 10"
-                aria-current="false"
-              >
-                <div
-                  class="t1148__img-wrapper"
-                  style="--height: 500px; --mob-height: 350px"
-                >
-                  <img
-                    class="t-img t1148__img"
-                    src="https://thb.tildacdn.net/tild6336-3439-4466-b332-383265633833/-/empty/0b221d34a7bea5af08ac.jpg"
-                    data-original="https://static.tildacdn.net/tild6336-3439-4466-b332-383265633833/0b221d34a7bea5af08ac.jpg"
-                    data-index="2"
-                    data-original="https://static.tildacdn.net/tild6336-3439-4466-b332-383265633833/0b221d34a7bea5af08ac.jpg"
-                    imgfield="gi_img__2"
-                    alt=""
-                    draggable="false"
-                  />
-                </div>
-              </div>
-              <div
-                class="t1148__item"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="4 of 10"
-                aria-current="false"
-              >
-                <div
-                  class="t1148__img-wrapper"
-                  style="--height: 500px; --mob-height: 350px"
-                >
-                  <img
-                    class="t-img t1148__img"
-                    src="https://thb.tildacdn.net/tild3164-3730-4539-b833-356663306534/-/empty/fe9b100e056d201daaa0.jpg"
-                    data-original="https://static.tildacdn.net/tild3164-3730-4539-b833-356663306534/fe9b100e056d201daaa0.jpg"
-                    data-index="3"
-                    data-original="https://static.tildacdn.net/tild3164-3730-4539-b833-356663306534/fe9b100e056d201daaa0.jpg"
-                    imgfield="gi_img__3"
-                    alt=""
-                    draggable="false"
-                  />
-                </div>
-              </div>
-              <div
-                class="t1148__item"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="5 of 10"
-                aria-current="false"
-              >
-                <div
-                  class="t1148__img-wrapper"
-                  style="--height: 500px; --mob-height: 350px"
-                >
-                  <img
-                    class="t-img t1148__img"
-                    src="https://thb.tildacdn.net/tild3765-6165-4631-a432-383936306336/-/empty/1be83ec7c312b2e66a71.jpg"
-                    data-original="https://static.tildacdn.net/tild3765-6165-4631-a432-383936306336/1be83ec7c312b2e66a71.jpg"
-                    data-index="4"
-                    data-original="https://static.tildacdn.net/tild3765-6165-4631-a432-383936306336/1be83ec7c312b2e66a71.jpg"
-                    imgfield="gi_img__4"
-                    alt=""
-                    draggable="false"
-                  />
-                </div>
-              </div>
-              <div
-                class="t1148__item"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="6 of 10"
-                aria-current="false"
-              >
-                <div
-                  class="t1148__img-wrapper"
-                  style="--height: 500px; --mob-height: 350px"
-                >
-                  <img
-                    class="t-img t1148__img"
-                    src="https://thb.tildacdn.net/tild3739-3133-4436-b536-313739653132/-/empty/cbd7efbf41ddb54271af.jpg"
-                    data-original="https://static.tildacdn.net/tild3739-3133-4436-b536-313739653132/cbd7efbf41ddb54271af.jpg"
-                    data-index="5"
-                    data-original="https://static.tildacdn.net/tild3739-3133-4436-b536-313739653132/cbd7efbf41ddb54271af.jpg"
-                    imgfield="gi_img__5"
-                    alt=""
-                    draggable="false"
-                  />
-                </div>
-              </div>
-              <div
-                class="t1148__item"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="7 of 10"
-                aria-current="false"
-              >
-                <div
-                  class="t1148__img-wrapper"
-                  style="--height: 500px; --mob-height: 350px"
-                >
-                  <img
-                    class="t-img t1148__img"
-                    src="https://thb.tildacdn.net/tild6562-3130-4965-b235-376232326561/-/empty/61a01dd884f0c3b00bd5.jpg"
-                    data-original="https://static.tildacdn.net/tild6562-3130-4965-b235-376232326561/61a01dd884f0c3b00bd5.jpg"
-                    data-index="6"
-                    data-original="https://static.tildacdn.net/tild6562-3130-4965-b235-376232326561/61a01dd884f0c3b00bd5.jpg"
-                    imgfield="gi_img__6"
-                    alt=""
-                    draggable="false"
-                  />
-                </div>
-              </div>
-              <div
-                class="t1148__item"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="8 of 10"
-                aria-current="false"
-              >
-                <div
-                  class="t1148__img-wrapper"
-                  style="--height: 500px; --mob-height: 350px"
-                >
-                  <img
-                    class="t-img t1148__img"
-                    src="https://thb.tildacdn.net/tild3336-6363-4363-b462-306330343939/-/empty/fd70c331309855caacec.jpg"
-                    data-original="https://static.tildacdn.net/tild3336-6363-4363-b462-306330343939/fd70c331309855caacec.jpg"
-                    data-index="7"
-                    data-original="https://static.tildacdn.net/tild3336-6363-4363-b462-306330343939/fd70c331309855caacec.jpg"
-                    imgfield="gi_img__7"
-                    alt=""
-                    draggable="false"
-                  />
-                </div>
-              </div>
-              <div
-                class="t1148__item"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="9 of 10"
-                aria-current="false"
-              >
-                <div
-                  class="t1148__img-wrapper"
-                  style="--height: 500px; --mob-height: 350px"
-                >
-                  <img
-                    class="t-img t1148__img"
-                    src="https://thb.tildacdn.net/tild3238-3063-4861-a134-626434323464/-/empty/3f985b99d3bfbb52bbf7.jpg"
-                    data-original="https://static.tildacdn.net/tild3238-3063-4861-a134-626434323464/3f985b99d3bfbb52bbf7.jpg"
-                    data-index="8"
-                    data-original="https://static.tildacdn.net/tild3238-3063-4861-a134-626434323464/3f985b99d3bfbb52bbf7.jpg"
-                    imgfield="gi_img__8"
-                    alt=""
-                    draggable="false"
-                  />
-                </div>
-              </div>
-              <div
-                class="t1148__item"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="10 of 10"
-                aria-current="false"
-              >
-                <div
-                  class="t1148__img-wrapper"
-                  style="--height: 500px; --mob-height: 350px"
-                >
-                  <img
-                    class="t-img t1148__img"
-                    src="https://thb.tildacdn.net/tild3436-3931-4635-a665-333365626134/-/empty/feb970b653de72df570f.jpg"
-                    data-original="https://static.tildacdn.net/tild3436-3931-4635-a665-333365626134/feb970b653de72df570f.jpg"
-                    data-index="9"
-                    data-original="https://static.tildacdn.net/tild3436-3931-4635-a665-333365626134/feb970b653de72df570f.jpg"
-                    imgfield="gi_img__9"
-                    alt=""
-                    draggable="false"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+       
         <script>
           t_onReady(function () {
             t_onFuncLoad("t_slider__init", function () {
@@ -8437,7 +8324,7 @@
             }
           }
         </style>
-        <div class="t396">
+       <!-- <div class="t396">
           <div
             class="t396__artboard"
             data-artboard-recid="2190870013"
@@ -8469,8 +8356,8 @@
               data-field-left-res-480-value="62"
               data-field-left-res-640-value="146"
               data-field-left-res-960-value="306"
-            >
-              <div class="tn-atom" field="tn_text_1741430557573">Colours:</div>
+            >-->
+             <!-- <div class="tn-atom" field="tn_text_1741430557573">Colours:</div>-->
             </div>
             <div
               class="t396__elem tn-elem tn-elem__21908700131741430557581 t-animate"
@@ -8623,12 +8510,12 @@
               data-field-left-res-640-value="146"
               data-field-left-res-960-value="306"
             >
-              <div class="tn-atom" field="tn_text_1741430557592">
+            <!-- <div class="tn-atom" field="tn_text_1741430557592">
                 Ladies: Elegant summer dresses in pastel tones. We recommend
                 bringing a hat and sunglasses for comfort.<br /><br />Gentlemen:
                 Suits or shirts in classic shades. Grey, blue, brown, beige are
                 great choices!
-              </div>
+              </div>--> 
             </div>
           </div>
         </div>
@@ -10038,11 +9925,14 @@
               background-attachment: scroll;
             }
           }
+
+
+          
           #rec2047564733 .tn-elem[data-elem-id="1710522265387"] {
             color: #4a4a4a;
             text-align: CENTER;
             z-index: 3;
-            top: 52px;
+            top: 0px;
             left: calc(50% - 600px + 386px);
             width: 428px;
             height: auto;
