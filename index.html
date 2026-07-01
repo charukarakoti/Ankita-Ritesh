@@ -4,6 +4,28 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+      }
+      body {
+        background-color: #ffffff;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      .t-body,
+      .t-records,
+      .t-rec {
+        overflow-x: hidden;
+      }
+    </style>
     <!--metatextblock-->
     <title>Ankita & Ritesh</title>
     <meta
@@ -325,7 +347,7 @@
       })();
     </script>
   </head>
-  <body class="t-body" style="margin: 0">
+  <body class="t-body" style="margin: 0; background-color: #ffffff;">
     <!--allrecords-->
     <div
       id="allrecords"
@@ -343,7 +365,7 @@
       <div
         id="rec2053153433"
         class="r t-rec t-screenmax-980px"
-        style=""
+       
         data-animationappear="off"
         data-record-type="396"
         data-screen-max="980px"
@@ -369,35 +391,17 @@
             background-repeat: no-repeat;
           }
           @media screen and (max-width: 1199px) {
-            #rec2053153433 .t396__artboard,
-            #rec2053153433 .t396__filter,
-            #rec2053153433 .t396__carrier {
-            }
-            #rec2053153433 .t396__filter {
-            }
-            #rec2053153433 .t396__carrier {
+#rec2053153433 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 959px) {
-            #rec2053153433 .t396__artboard,
-            #rec2053153433 .t396__filter,
-            #rec2053153433 .t396__carrier {
-            }
-            #rec2053153433 .t396__filter {
-            }
-            #rec2053153433 .t396__carrier {
+#rec2053153433 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 639px) {
-            #rec2053153433 .t396__artboard,
-            #rec2053153433 .t396__filter,
-            #rec2053153433 .t396__carrier {
-            }
-            #rec2053153433 .t396__filter {
-            }
-            #rec2053153433 .t396__carrier {
+#rec2053153433 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -407,9 +411,7 @@
             #rec2053153433 .t396__carrier {
               height: 763px;
             }
-            #rec2053153433 .t396__filter {
-            }
-            #rec2053153433 .t396__carrier {
+#rec2053153433 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -1049,7 +1051,7 @@
       <div
         id="rec2053155743"
         class="r t-rec t-screenmax-980px"
-        style=""
+       
         data-animationappear="off"
         data-record-type="131"
         data-screen-max="980px"
@@ -1086,11 +1088,11 @@
                   z-index: 2147483647;
                   cursor: pointer;
                   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                  visibility: hidden; /* Initially hidden */
+                  visibility: hidden;
                   opacity: 0;
-                  transition:
-                    visibility 0s,
-                    opacity 0.3s ease-in-out;
+                  transition: visibility 0s, opacity 0.3s ease-in-out;
+                  font-size: 14px;
+                  flex-shrink: 0;
                 "
               >
                 <div
@@ -1135,10 +1137,6 @@
                   const iconPause = document.getElementById("icon-pause");
 
                   enterButton.addEventListener("click", function () {
-                    // Hide the button
-                    // enterButton.style.display = 'none';
-
-                    // Play audio
                     audio.muted = false;
                     audio
                       .play()
@@ -1148,7 +1146,6 @@
                       })
                       .catch((err) => console.log("Audio play failed:", err));
 
-                    // Show floating audio button
                     audioControl.style.visibility = "visible";
                     audioControl.style.opacity = "1";
                   });
@@ -1166,6 +1163,32 @@
                   });
                 });
               </script>
+              <style>
+                @media screen and (max-width: 768px) {
+                  #audio-control {
+                    bottom: 15px !important;
+                    right: 15px !important;
+                    width: 50px !important;
+                    height: 50px !important;
+                  }
+                  #audio-control svg {
+                    width: 24px !important;
+                    height: 24px !important;
+                  }
+                }
+                @media screen and (max-width: 480px) {
+                  #audio-control {
+                    bottom: 12px !important;
+                    right: 12px !important;
+                    width: 48px !important;
+                    height: 48px !important;
+                  }
+                  #audio-control svg {
+                    width: 20px !important;
+                    height: 20px !important;
+                  }
+                }
+              </style>
               <!-- nominify end -->
             </div>
           </div>
@@ -1174,7 +1197,7 @@
       <div
         id="rec2047601243"
         class="r t-rec"
-        style=""
+       
         data-animationappear="off"
         data-record-type="396"
       >
@@ -1197,48 +1220,23 @@
             background-repeat: no-repeat;
           }
           @media screen and (max-width: 1199px) {
-            #rec2047601243 .t396__artboard,
-            #rec2047601243 .t396__filter,
-            #rec2047601243 .t396__carrier {
-            }
-            #rec2047601243 .t396__filter {
-            }
-            #rec2047601243 .t396__carrier {
+#rec2047601243 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 959px) {
-            #rec2047601243 .t396__artboard,
-            #rec2047601243 .t396__filter,
-            #rec2047601243 .t396__carrier {
-            }
-            #rec2047601243 .t396__filter {
-            }
-            #rec2047601243 .t396__carrier {
+#rec2047601243 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 639px) {
-            #rec2047601243 .t396__artboard,
-            #rec2047601243 .t396__filter,
-            #rec2047601243 .t396__carrier {
-            }
-            #rec2047601243 .t396__filter {
-            }
-            #rec2047601243 .t396__carrier {
+#rec2047601243 .t396__carrier {
               background-attachment: scroll;
             }
           }
 
-
           @media screen and (max-width: 479px) {
-            #rec2047601243 .t396__artboard,
-            #rec2047601243 .t396__filter,
-            #rec2047601243 .t396__carrier {
-            }
-            #rec2047601243 .t396__filter {
-            }
-            #rec2047601243 .t396__carrier {
+#rec2047601243 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -1771,38 +1769,56 @@
                 </svg>
               </div>
             </div>
+            
             <div
-              class="t396__elem tn-elem tn-elem__20476012431730310670432 t-animate"
-              data-elem-id="1730310670432"
-              data-elem-type="text"
-              data-field-top-value="308"
-              data-field-left-value="446"
-              data-field-height-value="25"
-              data-field-width-value="317"
-              data-field-axisy-value="top"
-              data-field-axisx-value="left"
-              data-field-container-value="grid"
-              data-field-topunits-value="px"
-              data-field-leftunits-value="px"
-              data-field-heightunits-value="px"
-              data-field-widthunits-value="px"
-              data-animate-style="fadein"
-              data-animate-duration="1"
-              data-animate-delay="0.2"
-              data-animate-mobile="y"
-              data-field-textfit-value="autoheight"
-              data-field-fontsize-value="22"
-              data-field-left-res-320-value="6"
-              data-field-left-res-480-value="86"
-              data-field-top-res-640-value="308"
-              data-field-left-res-640-value="166"
-              data-field-top-res-960-value="308"
-              data-field-left-res-960-value="326"
-            >
-              <div class="tn-atom" field="tn_text_1730310670432">
-               are getting engaged!
-              </div>
-            </div>
+    class="t396__elem tn-elem tn-elem__20476012431730310670432 t-animate"
+    data-elem-id="1730310670432"
+    data-elem-type="text"
+    data-field-top-value="308"
+    data-field-left-value="446"
+    data-field-height-value="70"
+    data-field-width-value="317"
+    data-field-axisy-value="top"
+    data-field-axisx-value="left"
+    data-field-container-value="grid"
+    data-field-topunits-value="px"
+    data-field-leftunits-value="px"
+    data-field-heightunits-value="px"
+    data-field-widthunits-value="px"
+    data-animate-style="fadein"
+    data-animate-duration="1"
+    data-animate-delay="0.2"
+    data-animate-mobile="y"
+    data-field-textfit-value="autoheight"
+    data-field-fontsize-value="22"
+    data-field-left-res-320-value="6"
+    data-field-left-res-480-value="86"
+    data-field-top-res-640-value="308"
+    data-field-left-res-640-value="166"
+    data-field-top-res-960-value="308"
+    data-field-left-res-960-value="326"
+>
+    <div class="tn-atom" field="tn_text_1730310670432">
+        are getting engaged!<br><br>
+       
+    </div>
+
+    <div
+    class="t396__elem tn-elem"
+    style="top:30px; left:calc(50% - 35px); width:70px; z-index:10; position:absolute;"
+>
+    <div class="tn-atom">
+        <img
+            class="tn-atom__img"
+            src="assets/rings.png"
+            alt="Rings"
+            style="width:100%; height:auto;"
+        >
+    </div>
+</div>
+
+    
+</div>
             <div
               class="t396__elem tn-elem tn-elem__20476012431776948176126"
               data-elem-id="1776948176126"
@@ -1851,6 +1867,135 @@
             >
               <div class="tn-atom"></div>
             </div>
+            <div
+              class="t396__elem tn-elem tn-elem__hero-scroll-down"
+              data-elem-id="hero-scroll-down"
+              data-elem-type="html"
+              style="
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 25;
+                text-align: center;
+                width: 100%;
+              "
+            >
+              <div class="tn-atom tn-atom__html" style="text-align: center; padding: 0; margin: 0;">
+                <style>
+                  .hero-scroll-down {
+                    display: inline-flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: opacity 0.3s ease-in-out;
+                    color: #666666;
+                  }
+                  .hero-scroll-down:hover {
+                    opacity: 0.7;
+                  }
+                  .hero-scroll-down:active {
+                    opacity: 0.5;
+                  }
+                  .hero-scroll-circle {
+                    width: 30px;
+                    height: 50px;
+                    border: 2px solid #666666;
+                    border-radius: 15px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    padding-top: 8px;
+                    position: relative;
+                  }
+                  .hero-scroll-circle span {
+                    display: block;
+                    width: 3px;
+                    height: 8px;
+                    background-color: #666666;
+                    border-radius: 3px;
+                    animation: hero-scroll-animate 1.5s infinite;
+                  }
+                  .hero-scroll-circle span:nth-child(2) {
+                    animation-delay: 0.3s;
+                  }
+                  @keyframes hero-scroll-animate {
+                    0% {
+                      opacity: 1;
+                      transform: translateY(0);
+                    }
+                    100% {
+                      opacity: 0;
+                      transform: translateY(10px);
+                    }
+                  }
+                  .hero-scroll-text {
+                    font-family: Arial, sans-serif;
+                    font-size: 13px;
+                    color: #666666;
+                    letter-spacing: 1.5px;
+                    font-weight: normal;
+                    margin: 0;
+                    text-transform: uppercase;
+                  }
+                  @media screen and (max-width: 479px) {
+                    .hero-scroll-circle {
+                      width: 24px;
+                      height: 40px;
+                      border-width: 1.5px;
+                    }
+                    .hero-scroll-circle span {
+                      width: 2px;
+                      height: 6px;
+                    }
+                    .hero-scroll-text {
+                      font-size: 11px;
+                      letter-spacing: 1px;
+                    }
+                  }
+                </style>
+                <a href="#rec2190837343" class="hero-scroll-down">
+                  <div class="hero-scroll-circle">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="hero-scroll-text">Scroll Down</div>
+                </a>
+                <script>
+                  (function() {
+                    setTimeout(() => {
+                      const heroScrollDown = document.querySelector(".hero-scroll-down");
+                      
+                      if (!heroScrollDown) return;
+
+                      // Handle scroll fade
+                      window.addEventListener("scroll", () => {
+                        if (window.scrollY > 10) {
+                          heroScrollDown.style.opacity = "0";
+                          heroScrollDown.style.pointerEvents = "none";
+                        } else {
+                          heroScrollDown.style.opacity = "1";
+                          heroScrollDown.style.pointerEvents = "auto";
+                        }
+                      });
+
+                      // Handle click
+                      heroScrollDown.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector("#rec2190837343");
+                        if (targetElement) {
+                          targetElement.scrollIntoView({
+                            behavior: "smooth"
+                          });
+                        }
+                      });
+                    }, 200);
+                  })();
+                </script>
+              </div>
+            </div>
           </div>
         </div>
         <script>
@@ -1891,9 +2036,7 @@
             #rec2190837343 .t396__carrier {
               height: 350px;
             }
-            #rec2190837343 .t396__filter {
-            }
-            #rec2190837343 .t396__carrier {
+#rec2190837343 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -1903,20 +2046,21 @@
             #rec2190837343 .t396__carrier {
               height: 350px;
             }
-            #rec2190837343 .t396__filter {
-            }
-            #rec2190837343 .t396__carrier {
+#rec2190837343 .t396__carrier {
               background-attachment: scroll;
             }
           }
+
+          @media screen and (max-width: 480px) {
+    #audio-control svg {
+        width: 20px !important;
+        height: 20px !important;
+        padding-left: 4px;
+        padding-top: 5px;
+    }
+}
           @media screen and (max-width: 639px) {
-            #rec2190837343 .t396__artboard,
-            #rec2190837343 .t396__filter,
-            #rec2190837343 .t396__carrier {
-            }
-            #rec2190837343 .t396__filter {
-            }
-            #rec2190837343 .t396__carrier {
+#rec2190837343 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -1926,9 +2070,7 @@
             #rec2190837343 .t396__carrier {
               height: 350px;
             }
-            #rec2190837343 .t396__filter {
-            }
-            #rec2190837343 .t396__carrier {
+#rec2190837343 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -2355,7 +2497,7 @@ margin-top: 10px;
                       @media (max-width: 480px) {
                         .tdr-married {
                           font-size: 27px;
-                          padding-top:30px;
+                          padding-top:16px;
                         }
                       }
                       .tdr-married.tdr-show {
@@ -2748,38 +2890,6 @@ margin-top: 10px;
                     </script>
 
 
-<a href="#rec2047601243" class="scroll-down">
-    <div class="scroll-circle">
-        <span></span>
-        <span></span>
-    </div>
-    <div class="scroll-text">SCROLL DOWN</div>
-</a>
-<script>
-const scrollDown = document.querySelector(".scroll-down");
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 10) {
-        scrollDown.style.opacity = "0";
-        scrollDown.style.visibility = "hidden";
-        scrollDown.style.pointerEvents = "none";
-    } else {
-        scrollDown.style.opacity = "1";
-        scrollDown.style.visibility = "visible";
-        scrollDown.style.pointerEvents = "auto";
-    }
-});
-
-scrollDown.addEventListener("click", function(e) {
-    e.preventDefault();
-
-    document.querySelector("#rec2047601243").scrollIntoView({
-        behavior: "smooth"
-    });
-});
-</script>
-
-
                   </body>
 
                   
@@ -2853,9 +2963,7 @@ scrollDown.addEventListener("click", function(e) {
             #rec2191269323 .t396__carrier {
               height: 670px;
             }
-            #rec2191269323 .t396__filter {
-            }
-            #rec2191269323 .t396__carrier {
+#rec2191269323 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -2865,9 +2973,7 @@ scrollDown.addEventListener("click", function(e) {
             #rec2191269323 .t396__carrier {
               height: 670px;
             }
-            #rec2191269323 .t396__filter {
-            }
-            #rec2191269323 .t396__carrier {
+#rec2191269323 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -2877,9 +2983,7 @@ scrollDown.addEventListener("click", function(e) {
             #rec2191269323 .t396__carrier {
               height: 670px;
             }
-            #rec2191269323 .t396__filter {
-            }
-            #rec2191269323 .t396__carrier {
+#rec2191269323 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -2889,9 +2993,7 @@ scrollDown.addEventListener("click", function(e) {
             #rec2191269323 .t396__carrier {
               height: 670px;
             }
-            #rec2191269323 .t396__filter {
-            }
-            #rec2191269323 .t396__carrier {
+#rec2191269323 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -3602,7 +3704,6 @@ html{
     scroll-behavior:smooth;
 }
 
-
 .scroll-down{
     transition: opacity .4s ease, visibility .4s ease;
 }
@@ -3927,11 +4028,9 @@ html{
               data-field-heightunits-res-960-value="px"
               data-field-textfit-res-960-value="autoheight"
             >
-              <div class="tn-atom" field="tn_text_1705235414678" style="font-size:medium;">
-                As we get ready to say “I do,” we feel grateful for the
-                wonderful people in our lives.<br /><br />Your support means the
-                world to us, and we would be honored to have you with us as we
-                begin our life together.
+              <div class="tn-atom" field="tn_text_1705235414678" style="font-size:large;">
+                Every celebration is brighter when shared with the people we cherish. We would be delighted to celebrate this special day with you.<br><br>Join the celebration.<br>
+#ThisIsRian
               </div>
             </div>
             <div
@@ -4051,46 +4150,22 @@ html{
             background-repeat: no-repeat;
           }
           @media screen and (max-width: 1199px) {
-            #rec2191866633 .t396__artboard,
-            #rec2191866633 .t396__filter,
-            #rec2191866633 .t396__carrier {
-            }
-            #rec2191866633 .t396__filter {
-            }
-            #rec2191866633 .t396__carrier {
+#rec2191866633 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 959px) {
-            #rec2191866633 .t396__artboard,
-            #rec2191866633 .t396__filter,
-            #rec2191866633 .t396__carrier {
-            }
-            #rec2191866633 .t396__filter {
-            }
-            #rec2191866633 .t396__carrier {
+#rec2191866633 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 639px) {
-            #rec2191866633 .t396__artboard,
-            #rec2191866633 .t396__filter,
-            #rec2191866633 .t396__carrier {
-            }
-            #rec2191866633 .t396__filter {
-            }
-            #rec2191866633 .t396__carrier {
+#rec2191866633 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 479px) {
-            #rec2191866633 .t396__artboard,
-            #rec2191866633 .t396__filter,
-            #rec2191866633 .t396__carrier {
-            }
-            #rec2191866633 .t396__filter {
-            }
-            #rec2191866633 .t396__carrier {
+#rec2191866633 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -4199,30 +4274,10 @@ html{
               border-color var(--t396-speedhover, 0s) ease-in-out,
               box-shadow var(--t396-shadowshoverspeed, 0.2s) ease-in-out;
           }
-          @media screen and (max-width: 1199px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878416456000001"]
-              #molecule-1776878416456000001 {
-            }
-          }
-          @media screen and (max-width: 959px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878416456000001"]
-              #molecule-1776878416456000001 {
-            }
-          }
-          @media screen and (max-width: 639px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878416456000001"]
-              #molecule-1776878416456000001 {
-            }
-          }
-          @media screen and (max-width: 479px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878416456000001"]
-              #molecule-1776878416456000001 {
-            }
-          }
+@media screen and (max-width: 959px) {
+}
+@media screen and (max-width: 479px) {
+}
           #rec2191866633 .tn-elem[data-elem-id="1763405268776"] {
             color: #3a3a3a;
             text-align: center;
@@ -4311,7 +4366,7 @@ html{
           #rec2191866633 .tn-elem[data-elem-id="1772803062504"] .tn-atom {
             vertical-align: middle;
             color: #3a3a3a;
-            font-size: 30px;
+            font-size: 25px;
             font-family: "newtemplate", Arial, sans-serif;
             line-height: 1.55;
             font-weight: 700;
@@ -4400,30 +4455,10 @@ html{
               border-color var(--t396-speedhover, 0s) ease-in-out,
               box-shadow var(--t396-shadowshoverspeed, 0.2s) ease-in-out;
           }
-          @media screen and (max-width: 1199px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878418324000002"]
-              #molecule-1776878418324000002 {
-            }
-          }
-          @media screen and (max-width: 959px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878418324000002"]
-              #molecule-1776878418324000002 {
-            }
-          }
-          @media screen and (max-width: 639px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878418324000002"]
-              #molecule-1776878418324000002 {
-            }
-          }
-          @media screen and (max-width: 479px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878418324000002"]
-              #molecule-1776878418324000002 {
-            }
-          }
+@media screen and (max-width: 959px) {
+}
+@media screen and (max-width: 479px) {
+}
           #rec2191866633 .tn-elem[data-elem-id="1772803288793000002"] {
             color: #3a3a3a;
             text-align: center;
@@ -4521,7 +4556,7 @@ html{
           #rec2191866633 .tn-elem[data-elem-id="1772803288793000003"] .tn-atom {
             vertical-align: middle;
             color: #3a3a3a;
-            font-size: 30px;
+            font-size: 25px;
             font-family: "newtemplate", Arial, sans-serif;
             line-height: 1.55;
             font-weight: 700;
@@ -4619,30 +4654,10 @@ html{
               border-color var(--t396-speedhover, 0s) ease-in-out,
               box-shadow var(--t396-shadowshoverspeed, 0.2s) ease-in-out;
           }
-          @media screen and (max-width: 1199px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878420537000003"]
-              #molecule-1776878420537000003 {
-            }
-          }
-          @media screen and (max-width: 959px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878420537000003"]
-              #molecule-1776878420537000003 {
-            }
-          }
-          @media screen and (max-width: 639px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878420537000003"]
-              #molecule-1776878420537000003 {
-            }
-          }
-          @media screen and (max-width: 479px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878420537000003"]
-              #molecule-1776878420537000003 {
-            }
-          }
+@media screen and (max-width: 959px) {
+}
+@media screen and (max-width: 479px) {
+}
           #rec2191866633 .tn-elem[data-elem-id="1772803465944000005"] {
             color: #3a3a3a;
             text-align: center;
@@ -4739,7 +4754,7 @@ html{
           #rec2191866633 .tn-elem[data-elem-id="1772803465944000006"] .tn-atom {
             vertical-align: middle;
             color: #3a3a3a;
-            font-size: 30px;
+            font-size: 25px;
             font-family: "newtemplate", Arial, sans-serif;
             line-height: 1.55;
             font-weight: 700;
@@ -4836,30 +4851,10 @@ html{
               border-color var(--t396-speedhover, 0s) ease-in-out,
               box-shadow var(--t396-shadowshoverspeed, 0.2s) ease-in-out;
           }
-          @media screen and (max-width: 1199px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878422466000004"]
-              #molecule-1776878422466000004 {
-            }
-          }
-          @media screen and (max-width: 959px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878422466000004"]
-              #molecule-1776878422466000004 {
-            }
-          }
-          @media screen and (max-width: 639px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878422466000004"]
-              #molecule-1776878422466000004 {
-            }
-          }
-          @media screen and (max-width: 479px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878422466000004"]
-              #molecule-1776878422466000004 {
-            }
-          }
+@media screen and (max-width: 959px) {
+}
+@media screen and (max-width: 479px) {
+}
           #rec2191866633 .tn-elem[data-elem-id="1772803619332000008"] {
             color: #3a3a3a;
             text-align: center;
@@ -4956,7 +4951,7 @@ html{
           #rec2191866633 .tn-elem[data-elem-id="1772803619332000009"] .tn-atom {
             vertical-align: middle;
             color: #3a3a3a;
-            font-size: 30px;
+            font-size: 25px;
             font-family: "newtemplate", Arial, sans-serif;
             line-height: 1.55;
             font-weight: 700;
@@ -5053,30 +5048,10 @@ html{
               border-color var(--t396-speedhover, 0s) ease-in-out,
               box-shadow var(--t396-shadowshoverspeed, 0.2s) ease-in-out;
           }
-          @media screen and (max-width: 1199px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878452345000005"]
-              #molecule-1776878452345000005 {
-            }
-          }
-          @media screen and (max-width: 959px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878452345000005"]
-              #molecule-1776878452345000005 {
-            }
-          }
-          @media screen and (max-width: 639px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878452345000005"]
-              #molecule-1776878452345000005 {
-            }
-          }
-          @media screen and (max-width: 479px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878452345000005"]
-              #molecule-1776878452345000005 {
-            }
-          }
+@media screen and (max-width: 959px) {
+}
+@media screen and (max-width: 479px) {
+}
           #rec2191866633 .tn-elem[data-elem-id="1776687683335000001"] {
             color: #3a3a3a;
             text-align: center;
@@ -5173,7 +5148,7 @@ html{
           #rec2191866633 .tn-elem[data-elem-id="1776687683335000002"] .tn-atom {
             vertical-align: middle;
             color: #3a3a3a;
-            font-size: 30px;
+            font-size: 25px;
             font-family: "newtemplate", Arial, sans-serif;
             line-height: 1.55;
             font-weight: 700;
@@ -5270,30 +5245,10 @@ html{
               border-color var(--t396-speedhover, 0s) ease-in-out,
               box-shadow var(--t396-shadowshoverspeed, 0.2s) ease-in-out;
           }
-          @media screen and (max-width: 1199px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878815963000011"]
-              #molecule-1776878815963000011 {
-            }
-          }
-          @media screen and (max-width: 959px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878815963000011"]
-              #molecule-1776878815963000011 {
-            }
-          }
-          @media screen and (max-width: 639px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878815963000011"]
-              #molecule-1776878815963000011 {
-            }
-          }
-          @media screen and (max-width: 479px) {
-            #rec2191866633
-              .tn-group[data-group-id="1776878815963000011"]
-              #molecule-1776878815963000011 {
-            }
-          }
+@media screen and (max-width: 959px) {
+}
+@media screen and (max-width: 479px) {
+}
           #rec2191866633 .tn-elem[data-elem-id="1776878815963000012"] {
             color: #3a3a3a;
             text-align: center;
@@ -6017,7 +5972,7 @@ html{
                   data-field-left-res-960-value="512"
                 >
                   <div class="tn-atom" field="tn_text_1763405268776">
-               Join us at
+               Welcome Reception
                   </div>
                 </div>
                 <div
@@ -6096,7 +6051,7 @@ html{
                   data-field-textfit-res-960-value="autoheight"
                 >
                   <div class="tn-atom" field="tn_text_1772803288793000002">
-                    Ceremony
+                    Cocktails
                   </div>
                 </div>
                 <div
@@ -6131,7 +6086,7 @@ html{
                   data-field-textfit-res-960-value="autoheight"
                 >
                   <div class="tn-atom" field="tn_text_1772803288793000003">
-                    8:00PM
+                    7:00PM
                   </div>
                 </div>
               </div>
@@ -6177,7 +6132,7 @@ html{
                   data-field-left-res-960-value="500"
                 >
                   <div class="tn-atom" field="tn_text_1772803465944000005">
-                    Cocktail and dancing time
+                    Ring Ceremony
                   </div>
                 </div>
                 <div
@@ -6207,7 +6162,7 @@ html{
                   data-field-left-res-960-value="537"
                 >
                   <div class="tn-atom" field="tn_text_1772803465944000006">
-                    10:00PM
+                    8:00PM
                   </div>
                 </div>
               </div>
@@ -6255,7 +6210,7 @@ html{
                   data-field-left-res-960-value="516"
                 >
                   <div class="tn-atom" field="tn_text_1772803619332000008">
-                    Party and Open Bar
+                    Dinner
                   </div>
                 </div>
                 <div
@@ -6285,7 +6240,7 @@ html{
                   data-field-left-res-960-value="535"
                 >
                   <div class="tn-atom" field="tn_text_1772803619332000009">
-                    21:00
+                    10:00PM
                   </div>
                 </div>
               </div>
@@ -6331,7 +6286,7 @@ html{
                   data-field-left-res-960-value="304"
                 >
                   <div class="tn-atom" field="tn_text_1776687683335000001">
-                    Dinner
+                    Dance & Celebration
                   </div>
                 </div>
                 <div
@@ -6361,7 +6316,7 @@ html{
                   data-field-left-res-960-value="346"
                 >
                   <div class="tn-atom" field="tn_text_1776687683335000002">
-                    20:00
+                    9:00PM
                   </div>
                 </div>
               </div>
@@ -6780,35 +6735,17 @@ html{
             background-repeat: no-repeat;
           }
           @media screen and (max-width: 1199px) {
-            #rec2047657203 .t396__artboard,
-            #rec2047657203 .t396__filter,
-            #rec2047657203 .t396__carrier {
-            }
-            #rec2047657203 .t396__filter {
-            }
-            #rec2047657203 .t396__carrier {
+#rec2047657203 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 959px) {
-            #rec2047657203 .t396__artboard,
-            #rec2047657203 .t396__filter,
-            #rec2047657203 .t396__carrier {
-            }
-            #rec2047657203 .t396__filter {
-            }
-            #rec2047657203 .t396__carrier {
+#rec2047657203 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 639px) {
-            #rec2047657203 .t396__artboard,
-            #rec2047657203 .t396__filter,
-            #rec2047657203 .t396__carrier {
-            }
-            #rec2047657203 .t396__filter {
-            }
-            #rec2047657203 .t396__carrier {
+#rec2047657203 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -6818,9 +6755,7 @@ html{
             #rec2047657203 .t396__carrier {
               height: 680px;
             }
-            #rec2047657203 .t396__filter {
-            }
-            #rec2047657203 .t396__carrier {
+#rec2047657203 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -7446,7 +7381,7 @@ Engagement venue              </div>
       <!-- <div
         id="rec2190869763"
         class="r t-rec"
-        style=""
+       
         data-animationappear="off"
         data-record-type="396"
       >-->
@@ -7467,46 +7402,22 @@ Engagement venue              </div>
             background-repeat: no-repeat;
           }
           @media screen and (max-width: 1199px) {
-            #rec2190869763 .t396__artboard,
-            #rec2190869763 .t396__filter,
-            #rec2190869763 .t396__carrier {
-            }
-            #rec2190869763 .t396__filter {
-            }
-            #rec2190869763 .t396__carrier {
+#rec2190869763 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 959px) {
-            #rec2190869763 .t396__artboard,
-            #rec2190869763 .t396__filter,
-            #rec2190869763 .t396__carrier {
-            }
-            #rec2190869763 .t396__filter {
-            }
-            #rec2190869763 .t396__carrier {
+#rec2190869763 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 639px) {
-            #rec2190869763 .t396__artboard,
-            #rec2190869763 .t396__filter,
-            #rec2190869763 .t396__carrier {
-            }
-            #rec2190869763 .t396__filter {
-            }
-            #rec2190869763 .t396__carrier {
+#rec2190869763 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 479px) {
-            #rec2190869763 .t396__artboard,
-            #rec2190869763 .t396__filter,
-            #rec2190869763 .t396__carrier {
-            }
-            #rec2190869763 .t396__filter {
-            }
-            #rec2190869763 .t396__carrier {
+#rec2190869763 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -7869,7 +7780,7 @@ Engagement venue              </div>
       <div
         id="rec2190870013"
         class="r t-rec"
-        style=""
+       
         data-animationappear="off"
         data-record-type="396"
       >
@@ -7890,46 +7801,22 @@ Engagement venue              </div>
             background-repeat: no-repeat;
           }
           @media screen and (max-width: 1199px) {
-            #rec2190870013 .t396__artboard,
-            #rec2190870013 .t396__filter,
-            #rec2190870013 .t396__carrier {
-            }
-            #rec2190870013 .t396__filter {
-            }
-            #rec2190870013 .t396__carrier {
+#rec2190870013 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 959px) {
-            #rec2190870013 .t396__artboard,
-            #rec2190870013 .t396__filter,
-            #rec2190870013 .t396__carrier {
-            }
-            #rec2190870013 .t396__filter {
-            }
-            #rec2190870013 .t396__carrier {
+#rec2190870013 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 639px) {
-            #rec2190870013 .t396__artboard,
-            #rec2190870013 .t396__filter,
-            #rec2190870013 .t396__carrier {
-            }
-            #rec2190870013 .t396__filter {
-            }
-            #rec2190870013 .t396__carrier {
+#rec2190870013 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 479px) {
-            #rec2190870013 .t396__artboard,
-            #rec2190870013 .t396__filter,
-            #rec2190870013 .t396__carrier {
-            }
-            #rec2190870013 .t396__filter {
-            }
-            #rec2190870013 .t396__carrier {
+#rec2190870013 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -8558,9 +8445,7 @@ Engagement venue              </div>
             #rec2192331003 .t396__carrier {
               height: 208px;
             }
-            #rec2192331003 .t396__filter {
-            }
-            #rec2192331003 .t396__carrier {
+#rec2192331003 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -8570,9 +8455,7 @@ Engagement venue              </div>
             #rec2192331003 .t396__carrier {
               height: 208px;
             }
-            #rec2192331003 .t396__filter {
-            }
-            #rec2192331003 .t396__carrier {
+#rec2192331003 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -8582,9 +8465,7 @@ Engagement venue              </div>
             #rec2192331003 .t396__carrier {
               height: 208px;
             }
-            #rec2192331003 .t396__filter {
-            }
-            #rec2192331003 .t396__carrier {
+#rec2192331003 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -8594,9 +8475,7 @@ Engagement venue              </div>
             #rec2192331003 .t396__carrier {
               height: 208px;
             }
-            #rec2192331003 .t396__filter {
-            }
-            #rec2192331003 .t396__carrier {
+#rec2192331003 .t396__carrier {
               background-attachment: scroll;
             }
           }
@@ -9200,7 +9079,7 @@ Engagement venue              </div>
       <div
         id="rec2195253293"
         class="r t-rec"
-        style=""
+       
         data-animationappear="off"
         data-record-type="702"
       >
@@ -9318,7 +9197,7 @@ Engagement venue              </div>
                         data-redactor-toolbar="no"
                         field="li_title__2221855674630"
                         style="
-                          color:;
+                          color: inherit;
                           font-weight: 400;
                           font-family: &quot;Georgia&quot;;
                         "
@@ -9367,7 +9246,7 @@ Engagement venue              </div>
                         data-redactor-toolbar="no"
                         field="li_title__2221855674631"
                         style="
-                          color:;
+                          color: inherit;
                           font-weight: 400;
                           font-family: &quot;Georgia&quot;;
                         "
@@ -9388,7 +9267,7 @@ Engagement venue              </div>
                           <li class="t-checkboxes__item">
                             <label
                               class="t-checkbox__control t-text t-text_xs"
-                              style=""
+                             
                             >
                               <input
                                 type="checkbox"
@@ -9404,7 +9283,7 @@ Engagement venue              </div>
                           <li class="t-checkboxes__item">
                             <label
                               class="t-checkbox__control t-text t-text_xs"
-                              style=""
+                             
                             >
                               <input
                                 type="checkbox"
@@ -9420,7 +9299,7 @@ Engagement venue              </div>
                           <li class="t-checkboxes__item">
                             <label
                               class="t-checkbox__control t-text t-text_xs"
-                              style=""
+                             
                             >
                               <input
                                 type="checkbox"
@@ -9474,7 +9353,7 @@ Engagement venue              </div>
                         data-redactor-toolbar="no"
                         field="li_title__2221855674632"
                         style="
-                          color:;
+                          color: inherit;
                           font-weight: 400;
                           font-family: &quot;Georgia&quot;;
                         "
@@ -9861,7 +9740,7 @@ Engagement venue              </div>
       <div
         id="rec2047564733"
         class="r t-rec"
-        style=""
+       
         data-animationappear="off"
         data-record-type="396"
       >
@@ -9882,50 +9761,25 @@ Engagement venue              </div>
             background-repeat: no-repeat;
           }
           @media screen and (max-width: 1199px) {
-            #rec2047564733 .t396__artboard,
-            #rec2047564733 .t396__filter,
-            #rec2047564733 .t396__carrier {
-            }
-            #rec2047564733 .t396__filter {
-            }
-            #rec2047564733 .t396__carrier {
+#rec2047564733 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 959px) {
-            #rec2047564733 .t396__artboard,
-            #rec2047564733 .t396__filter,
-            #rec2047564733 .t396__carrier {
-            }
-            #rec2047564733 .t396__filter {
-            }
-            #rec2047564733 .t396__carrier {
+#rec2047564733 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 639px) {
-            #rec2047564733 .t396__artboard,
-            #rec2047564733 .t396__filter,
-            #rec2047564733 .t396__carrier {
-            }
-            #rec2047564733 .t396__filter {
-            }
-            #rec2047564733 .t396__carrier {
+#rec2047564733 .t396__carrier {
               background-attachment: scroll;
             }
           }
           @media screen and (max-width: 479px) {
-            #rec2047564733 .t396__artboard,
-            #rec2047564733 .t396__filter,
-            #rec2047564733 .t396__carrier {
-            }
-            #rec2047564733 .t396__filter {
-            }
-            #rec2047564733 .t396__carrier {
+#rec2047564733 .t396__carrier {
               background-attachment: scroll;
             }
           }
-
 
           
           #rec2047564733 .tn-elem[data-elem-id="1710522265387"] {
